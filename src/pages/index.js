@@ -5,6 +5,7 @@ import { Motion, spring, presets } from 'react-motion'
 import Background from '../components/Background'
 import Me from '../components/Me'
 import Articles from '../components/Articles'
+import Projects from '../components/Projects'
 
 import pink from '../layouts/images/pink.jpg'
 
@@ -52,6 +53,7 @@ class IndexPage extends React.Component {
         <Background height={window.height / 2} width={window.width} scrollTop={scrollTop} />
         <Me screenCenter={screenCenter} mousePosition={mousePosition} />
         <Articles />
+        <Projects />
       </div>
     )
   }

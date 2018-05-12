@@ -22,7 +22,7 @@ class Article extends React.Component {
   }
 }
 
-Article.propTypes = {
+Article.defaultProps = {
   title: '',
   url: '',
   snippet: ''
