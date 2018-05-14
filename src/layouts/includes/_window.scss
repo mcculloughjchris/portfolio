@@ -1,0 +1,64 @@
+.window {
+  font-family: 'Verdana';
+  -webkit-font-smoothing: none;
+  border: 2px solid #d7d8d3;
+  background: #d6d3ce;
+
+  .title {
+    background: #08256b;
+    color: #fffffd;
+    line-height: 2rem;
+    padding: 0 5px;
+    overflow: auto;
+    
+    h3 {
+      font-size: 1.4rem;
+      float: left;
+    }
+
+    a {
+      color: #fffffd;
+      text-decoration: none;
+    }
+
+    .options {
+      float: right;
+      overflow: auto;
+    }
+
+    .option {
+      float: left;
+    }
+  }
+
+  .body {
+    padding: 1rem;
+  }
+
+  p {
+    padding-bottom: 1rem;  
+  }
+
+  .button {
+    display: inline-block;
+    border-top: 2px solid #ffffff;
+    border-left: 2px solid #ffffff;
+    border-right: 2px solid #000000;
+    border-bottom: 2px solid #000000;
+    padding: 6px;
+    background: #d6d3ce;
+    margin-bottom: 1rem;
+    text-decoration: none;
+    color: #000000;
+
+    span {
+      padding: 2px;
+    }
+
+    &:hover {
+      span {
+        border: 1px dotted #444444;
+      }
+    }
+  }
+}

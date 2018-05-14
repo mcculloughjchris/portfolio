@@ -1,6 +1,8 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
+import Window from './Window'
+
 class Article extends React.Component {
   render () {
     const {
@@ -12,11 +14,11 @@ class Article extends React.Component {
     
     return (
       <div className='article'>
-        <h3><a href={url} target="_blank">{title}</a></h3>
-        <p>{snippet}...</p>
-        <div style={{ textAlign: 'center' }}>
-          <a href={url} target="_blank" className='button'><span>Read More</span></a>
-        </div>
+        <Window
+          title={title}
+          description={snippet}
+          url={url}
+          buttonText='Read More' />
       </div>
     )
   }

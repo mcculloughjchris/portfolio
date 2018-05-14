@@ -11,48 +11,4 @@
 .article {
   max-width: 900px;
   margin: 0 auto 2rem auto;
-  background: #d6d3ce;
-  font-family: 'Verdana';
-  -webkit-font-smoothing: none;
-  border: 2px solid #d7d8d3;
-
-  h3 {
-    font-size: 1.4rem;
-    background: #08256b;
-    color: #fffffd;
-    line-height: 2rem;
-    padding: 0 5px;
-
-    a {
-      color: #fffffd;
-      text-decoration: none;
-    }
-  }
-
-  p {
-    padding: 1rem;
-  }
-
-  .button {
-    display: inline-block;
-    border-top: 2px solid #ffffff;
-    border-left: 2px solid #ffffff;
-    border-right: 2px solid #000000;
-    border-bottom: 2px solid #000000;
-    padding: 6px;
-    background: #d6d3ce;
-    margin-bottom: 1rem;
-    text-decoration: none;
-    color: #000000;
-
-    span {
-      padding: 2px;
-    }
-
-    &:hover {
-      span {
-        border: 1px dotted #444444;
-      }
-    }
-  }
 }
