@@ -6,6 +6,7 @@ import Background from '../components/Background'
 import Me from '../components/Me'
 import Articles from '../components/Articles'
 import Projects from '../components/Projects'
+import MyConfiguration from '../components/MyConfiguration'
 
 import pink from '../layouts/images/pink.jpg'
 
@@ -57,6 +58,7 @@ class IndexPage extends React.Component {
           mousePosition={mousePosition} />
         <Articles />
         <Projects />
+        <MyConfiguration />
       </div>
     )
   }
