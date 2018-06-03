@@ -15,3 +15,29 @@
   margin-top: -92px;
   cursor: default;
 }
+
+.mobile {
+  .name-wrapper {
+    position: static;
+    width: auto;
+    transform: none;
+    margin: 1rem;
+
+    h1 {
+      font-size: 14vw;
+    }
+
+    h2 {
+      font-size: 12vw;
+    }
+  }
+
+  .name {
+    margin-left: auto;
+    margin-top: auto;
+  }
+
+  .links {
+    margin-left: 0;
+  }
+}

@@ -12,7 +12,8 @@ class Me extends React.Component {
   render () {
     const {
       screenCenter,
-      mousePosition
+      mousePosition,
+      width
     } = this.props
 
     const defaultStyle = {
@@ -20,14 +21,31 @@ class Me extends React.Component {
       translationY: screenCenter.y
     }
 
-    const style = {
+    let xy = {
+      x: screenCenter.x,
+      y: screenCenter.y
+    }
+
+    let style = {
       translationX: mousePosition.left,
       translationY: mousePosition.top
     }
+
+    if (width <= 715) {
+      style = {
+        translationX: 0,
+        translationY: 0
+      }
+
+      xy = {
+        x: 0,
+        y: 0
+      }
+    }
     
     return (
-      <div className='me-page'>
-        <div className='name-wrapper' style={{ left: screenCenter.x, top: screenCenter.y }}>
+      <div className={`me-page ${width <= 715 ? 'mobile' : ''}`}>
+        <div className='name-wrapper' style={{ left: xy.x, top: xy.y }}>
           <Motion
             defaultStyles={defaultStyle}
             style={style}>
