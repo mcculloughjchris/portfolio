@@ -56,6 +56,7 @@ class IndexPage extends React.Component {
           width={window.width}
           scrollTop={scrollTop} />
         <Me
+          height={window.height}
           width={window.width}
           screenCenter={screenCenter}
           mousePosition={mousePosition} />

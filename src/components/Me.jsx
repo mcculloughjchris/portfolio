@@ -13,7 +13,8 @@ class Me extends React.Component {
     const {
       screenCenter,
       mousePosition,
-      width
+      width,
+      height
     } = this.props
 
     const defaultStyle = {
@@ -44,7 +45,7 @@ class Me extends React.Component {
     }
     
     return (
-      <div className={`me-page ${width <= 715 ? 'mobile' : ''}`}>
+      <div className={`me-page ${width <= 715 ? 'mobile' : ''}`} style={{ height: height }}>
         <div className='name-wrapper' style={{ left: xy.x, top: xy.y }}>
           <Motion
             defaultStyles={defaultStyle}
