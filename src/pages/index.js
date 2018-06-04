@@ -51,14 +51,18 @@ class IndexPage extends React.Component {
     
     return (
       <div className="full">
-        <Background height={window.height / 2} width={window.width} scrollTop={scrollTop} />
+        <Background
+          height={window.height / 2}
+          width={window.width}
+          scrollTop={scrollTop} />
         <Me
           width={window.width}
           screenCenter={screenCenter}
           mousePosition={mousePosition} />
         <Articles />
         <Projects />
-        <MyConfiguration />
+        <MyConfiguration
+          mousePosition={mousePosition} />
       </div>
     )
   }

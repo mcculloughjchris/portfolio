@@ -9,6 +9,11 @@
     display: flex;
     flex: 1;
     flex-wrap: wrap;
+    transform-style: preserve-3d;
+
+    * {
+      transform-style: preserve-3d;
+    }
   }
 
   img {
