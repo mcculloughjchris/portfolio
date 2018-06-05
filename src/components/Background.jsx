@@ -11,7 +11,7 @@ class Background extends React.Component {
   
   componentDidMount () {
     setInterval(this.addLine, 1000)
-    setTimeout(this.startRemovingLines, 25000)
+    setTimeout(this.startRemovingLines, 20000)
   }
   
   render () {

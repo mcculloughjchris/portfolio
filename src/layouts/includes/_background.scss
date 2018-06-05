@@ -1,3 +1,15 @@
+@keyframes lineAnimation {
+  from {
+    top: 100%;
+    opacity: 1;
+  }
+
+  to {
+    top: 0%;
+    opacity: 0;
+  }
+}
+
 .background {
   position: fixed;
   top: 0;
@@ -29,14 +41,17 @@
     top: 0;
     left: 0;
     right: 0;
+    height: 100%;
 
     .line {
       position: absolute;
-      top: 0;
       left: 0;
       right: 0;
       border-top: 1px solid #eba3f3;
       border-bottom: 1px solid #ae73b9;
+      animation-name: lineAnimation;
+      animation-duration: 20s;
+      animation-timing-function: ease-out;
     }
   }
 

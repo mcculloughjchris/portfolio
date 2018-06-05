@@ -23,17 +23,8 @@ class Line extends React.Component {
       mounted
     } = this.state
     
-    const style = {
-      top: spring(mounted ? 0 : height, { stiffness: 5 }),
-      opacity: spring(mounted ? 0 : 1, { stiffness: 5 })
-    }
-    
     return (
-      <Motion style={style}>
-        {computedStyle => (
-          <div className='line' style={{ opacity: computedStyle.opacity, transform: `translate3d(0, ${computedStyle.top}px, 0)`}} />
-        )}
-      </Motion>
+      <div className='line' />
     )
   }
 }
