@@ -1,0 +1,92 @@
+.icon {
+  background-image: url('images/icons-spritesheet.png');
+  background-repeat: no-repeat;
+  width: 150px;
+  margin: 1rem;
+
+  &-bootstrap {
+    background-position: 0 0;
+    height: 150px;
+  }
+
+  &-html {
+    background-position: -607px 0;
+    width: 152px;
+    height: 214px;
+  }
+
+  &-css {
+    background-position: -302px 0;
+    width: 155px;
+  }
+
+  &-js {
+    background-position: 0 -153px;
+    height: 150px;
+  }
+
+  &-jquery {
+    background-position: -609px -360px;
+  }
+
+  &-react {
+    background-position: -668px -223px;
+    height: 137px;
+  }
+
+  &-redux {
+    background-position: -457px -355px;
+    height: 142px;
+  }
+
+  &-vue {
+    background-position: -304px -387px;
+    height: 133px;
+  }
+
+  &-php {
+    background-position: -506px -275px;
+    height: 80px;
+  }
+
+  &-laravel {
+    background-position: -150px -172px;
+    height: 106px;
+  }
+
+  &-rails {
+    background-position: 0 -305px;
+    height: 55px;
+  }
+
+  &-mysql {
+    background-position: -456px -154px;
+    height: 103px;
+  }
+
+  &-git {
+    background-position: -455px -2px;
+    height: 150px;
+  }
+
+  &-webpack {
+    background-position: 0 -361px;
+    height: 169px;
+  }
+
+  &-mocha {
+    background-position: -305px -216px;
+    height: 172px;
+  }
+
+  &-chai {
+    background-position: -152px 0;
+    height: 172px;
+  }
+
+  &-selenium {
+    background-position: -157px -280px;
+    width: 140px;
+    height: 140px;
+  }
+}

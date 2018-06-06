@@ -47,23 +47,23 @@ class MyConfigurations extends React.Component {
             <div class="images" style={{
               transform: `perspective(1000px) translate3d(${computedStyle.x}px, 0, ${computedStyle.z}px)`
             }}>
-              <MetaImage src={HTML5} name='HTML5' />
-              <MetaImage src={CSS3} name='CSS3' />
-              <MetaImage src={JS} name='JS' />
-              <MetaImage src={jQuery} name='jQuery' />
-              <MetaImage src={Bootstrap} name='Bootstrap' />
-              <MetaImage src={ReactLogo} name='React' />
-              <MetaImage src={Redux} name='Redux' />
-              <MetaImage src={Vue} name='Vue' />
-              <MetaImage src={PHP} name='PHP' />
-              <MetaImage src={Laravel} name='Laravel' />
-              <MetaImage src={Rails} name='Rails' />
-              <MetaImage src={Mysql} name='MySQL' />
-              <MetaImage src={Git} name='Git' />
-              <MetaImage src={Webpack} name='Webpack' />
-              <MetaImage src={Mocha} name='Mocha' />
-              <MetaImage src={Chai} name='Chai' />
-              <MetaImage src={Selenium} name='Selenium' />
+              <div className='icon icon-html' />
+              <div className='icon icon-css' />
+              <div className='icon icon-js' />
+              <div className='icon icon-jquery' />
+              <div className='icon icon-bootstrap' />
+              <div className='icon icon-react' />
+              <div className='icon icon-redux' />
+              <div className='icon icon-vue' />
+              <div className='icon icon-php' />
+              <div className='icon icon-laravel' />
+              <div className='icon icon-rails' />
+              <div className='icon icon-mysql' />
+              <div className='icon icon-git' />
+              <div className='icon icon-webpack' />
+              <div className='icon icon-mocha' />
+              <div className='icon icon-chai' />
+              <div className='icon icon-selenium' />
             </div>
           )}
         </Motion>
