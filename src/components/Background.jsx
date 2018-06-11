@@ -3,6 +3,7 @@
 import React from 'react'
 
 import Line from './Line'
+import Sun from './Sun'
 
 class Background extends React.Component {
   state = {
@@ -36,7 +37,9 @@ class Background extends React.Component {
     
     return (
       <div className='background'>
-        <div className={`top-half`}></div>
+        <div className={`top-half`}>
+          <Sun mousePosition={this.props.mousePosition} screenCenter={this.props.screenCenter} />
+        </div>
         <div className={`bottom-half`}>
           <div className='horizontal-lines'>
             {this.horizontalLines()}
