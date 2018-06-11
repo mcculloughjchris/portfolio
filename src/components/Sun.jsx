@@ -31,7 +31,7 @@ class Sun extends React.Component {
               bottom: 0,
               width: 250,
               left: '10%',
-              transform: `perspective(1500px) translate3d(0px, ${computedStyle.translationY}px, ${computedStyle.translationZ}px)`
+              transform: `perspective(1500px) translate3d(0px, ${-computedStyle.translationY}px, ${computedStyle.translationZ}px)`
             }} />
         )}
       </Motion>
