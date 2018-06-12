@@ -1,7 +1,7 @@
 import React from 'react'
 import { Motion, spring, presets } from 'react-motion'
 
-import Svg from '../layouts/images/Sun.svg'
+import Svg from '../layouts/images/sun.svg'
 
 class Sun extends React.Component {
   render () {
