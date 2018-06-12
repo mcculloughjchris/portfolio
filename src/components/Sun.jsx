@@ -19,6 +19,19 @@ class Sun extends React.Component {
       translationY: mousePosition.top,
       translationZ: mousePosition.left
     }
+
+    const css = {
+      position: 'absolute',
+      width: 250,
+      left: '10%'
+    }
+
+    if (this.props.reverse) {
+      css.top = 0
+      css.opacity = 0.1
+    } else {
+      css.bottom = 0
+    }
     
     return (
       <Motion
@@ -27,11 +40,10 @@ class Sun extends React.Component {
         {computedStyle => (
           <img src={Svg}
             style={{
-              position: 'absolute',
-              bottom: 0,
-              width: 250,
-              left: '10%',
-              transform: `perspective(1500px) translate3d(0px, ${-computedStyle.translationY}px, ${computedStyle.translationZ}px)`
+              ...css,
+              transform: this.props.reverse ?
+                `perspective(1500px) translate3d(0px, ${computedStyle.translationY}px, ${computedStyle.translationZ}px) scale(1, -1)` :
+                `perspective(1500px) translate3d(0px, ${-computedStyle.translationY}px, ${computedStyle.translationZ}px)`
             }} />
         )}
       </Motion>

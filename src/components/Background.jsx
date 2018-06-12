@@ -41,6 +41,7 @@ class Background extends React.Component {
           <Sun mousePosition={this.props.mousePosition} screenCenter={this.props.screenCenter} />
         </div>
         <div className={`bottom-half`}>
+          <Sun reverse mousePosition={this.props.mousePosition} screenCenter={this.props.screenCenter} />
           <div className='horizontal-lines'>
             {this.horizontalLines()}
           </div>
