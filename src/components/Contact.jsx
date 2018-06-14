@@ -10,6 +10,8 @@ class Contact extends React.Component {
         name='Contact'>
         
         <form name='contact' method="POST" netlify="true" action="/#submitted">
+          <input type="hidden" name="form-name" value="contact" />
+
           <label>Your Name:<br /><input type='text' name='name' placeholder='Your Name' /></label>
 
           <label>Your Email:<br /><input type='email' name='email' placeholder='Your Email' /></label>
