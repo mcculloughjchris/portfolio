@@ -10,7 +10,7 @@ class Full extends React.Component {
     } = this.props
     
     return (
-      <div className={`full ${className}`}>
+      <div className={`full ${className}`} id={className}>
         <h2>{name}</h2>
 
         {children}

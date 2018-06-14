@@ -1,0 +1,33 @@
+.contact {
+  position: relative;
+  padding: 20px 0;
+
+  h2 {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ffffff;
+  }
+
+  form {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+  label {
+    display: block;
+    color: #ffffff;
+    font-family: sans-serif;
+    margin-bottom: 1rem;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+    margin-top: 0.2rem;
+    padding: 0.4rem;
+  }
+
+  button {
+    padding: 0.4rem;
+  }
+}

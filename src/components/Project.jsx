@@ -11,7 +11,7 @@ class Project extends React.Component {
     } = this.props
 
     return (
-      <div class='project'>
+      <div className='project'>
         <Window
           withOptions
           title={title}

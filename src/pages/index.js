@@ -7,6 +7,7 @@ import Me from '../components/Me'
 import Articles from '../components/Articles'
 import Projects from '../components/Projects'
 import MyConfiguration from '../components/MyConfiguration'
+import Contact from '../components/Contact'
 
 import pink from '../layouts/images/pink.jpg'
 
@@ -28,6 +29,8 @@ class IndexPage extends React.Component {
   }
   
   componentDidMount () {
+    this.checkHash()
+
     window.addEventListener('load', this.findScreenCenter)
     window.addEventListener('resize', this.findScreenCenter)
     window.addEventListener('mousemove', this.handleMouseMove)
@@ -66,6 +69,7 @@ class IndexPage extends React.Component {
         <Projects />
         <MyConfiguration
           mousePosition={mousePosition} />
+        <Contact />
       </div>
     )
   }
@@ -105,6 +109,13 @@ class IndexPage extends React.Component {
     this.setState({
       scrollTop: window.scrollY
     })
+  }
+
+  checkHash = () => {
+    if (window.location.hash === '#submitted') {
+      alert('Thank you for contacting me!')
+      window.location.href = '/'
+    }
   }
 }
 

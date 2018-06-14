@@ -44,7 +44,7 @@ class MyConfigurations extends React.Component {
             z: top
           }}>
           {computedStyle => (
-            <div class="images" style={{
+            <div className="images" style={{
               transform: `perspective(1000px) translate3d(${computedStyle.x}px, 0, ${computedStyle.z}px)`
             }}>
               <div className='icon icon-html' />
