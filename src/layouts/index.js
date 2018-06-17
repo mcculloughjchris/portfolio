@@ -7,13 +7,12 @@ import './index.scss'
 
 const Layout = ({ children, data }) => (
   <div className="full">
-    <Helmet
-      title={data.site.siteMetadata.title}
-      meta={[
-        { name: 'description', content: 'Sample' },
-        { name: 'keywords', content: 'sample, something' },
-      ]}
-    />
+    <Helmet>
+      <title>{data.site.siteMetadata.title}</title>
+      <meta name="description" content="Front end web developer in Nashua New Hampshire" />
+      <meta name="keywords" content="front end development, web developer, web development" />
+      <link rel="canonical" href="https://mcculloughjchris.com/" />
+    </Helmet>
     {children()}
   </div>
 )
