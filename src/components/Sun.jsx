@@ -38,7 +38,9 @@ class Sun extends React.Component {
         defaultStyles={defaultStyles}
         style={style}>
         {computedStyle => (
-          <img src={Svg}
+          <img
+            alt="Floating sun"
+            src={Svg}
             style={{
               ...css,
               transform: this.props.reverse ?
