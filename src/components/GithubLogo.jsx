@@ -7,7 +7,6 @@ class GithubLogo extends React.Component {
   render () {
     return (
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120.78 117.79">
-        <title>Github</title>
         <defs>
           <pattern id="bgimg" width="100" height="150" x="0" y="0">
             <image href={pink} width="250" height="150" x="-50" y="0" />
