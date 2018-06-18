@@ -40,6 +40,7 @@ class Sun extends React.Component {
         {computedStyle => (
           <img
             alt="Floating sun"
+            title="Floating sun"
             src={Svg}
             style={{
               ...css,

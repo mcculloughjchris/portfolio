@@ -13,7 +13,7 @@ import safariPinned from '../layouts/images/safari-pinned-tab.svg'
 const Layout = ({ children, data }) => (
   <div className="full">
     <Helmet>
-      <title>{data.site.siteMetadata.title}</title>
+      <title>{data.site.siteMetadata.title} - Front End Developer in Nashua NH</title>
       <meta name="description" content="Front end web developer in Nashua, New Hampshire. I can do HTML, CSS, JS, jQuery, React, and also some back-end work." />
       <meta name="keywords" content="front end development, web developer, web development, javascript, jquery, react, html, css" />
       <link rel="canonical" href="https://mcculloughjchris.com/" />
