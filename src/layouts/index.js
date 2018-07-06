@@ -22,14 +22,6 @@ const Layout = ({ children, data }) => (
       <link rel="mask-icon" href={safariPinned} color="#5bbad5" />
       <meta name="msapplication-TileColor" content="#da532c" />
       <meta name="theme-color" content="#ffffff" />
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-121919441-1"></script>
-      <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-
-        gtag('config', 'UA-121919441-1');
-      </script>
     </Helmet>
     {children()}
   </div>
