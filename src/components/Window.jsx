@@ -15,7 +15,7 @@ class Window extends React.Component {
           {this.options()}
         </div>
 
-        {this.body()}...
+        {this.body()}
       </div>
     )
   }
@@ -46,7 +46,7 @@ class Window extends React.Component {
     if (description) {
       return (
         <div className='body'>
-          <p>{description}</p>
+          <p>{description}...</p>
 
           {this.button()}
         </div>
