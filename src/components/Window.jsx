@@ -15,7 +15,7 @@ class Window extends React.Component {
           {this.options()}
         </div>
 
-        {this.body()}
+        {this.body()}...
       </div>
     )
   }
